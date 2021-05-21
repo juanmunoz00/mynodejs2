@@ -9,13 +9,20 @@ var nodemailer = require('nodemailer');
 
 var app = express();
 
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //Handle the request
 app.get('/', function(req, res){
-    res.send('<h1>Hello there !!</h1>');
-    red.end;
+    res.render('index', {title: 'Welcome'});
+});
+
+app.get('/about', function(req, res){
+    res.render('about');
 });
 
 //Port listen
