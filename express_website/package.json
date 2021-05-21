@@ -1,0 +1,25 @@
+{
+  "name": "simple-website",
+  "version": "1.0.0",
+  "description": "Simple website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanmunoz00/mynodejs2.git"
+  },
+  "author": "Juancho",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "jade": "*",
+    "nodemailer": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/juanmunoz00/mynodejs2/issues"
+  },
+  "homepage": "https://github.com/juanmunoz00/mynodejs2#readme"
+}
