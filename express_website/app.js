@@ -34,7 +34,7 @@ app.post('/contact/send', function(req, res){
         service: 'Gmail',
         auth: {
             user: 'jmunoz@syner.info',
-            pass: 'juan11info'
+            pass: ''
         }
     });
 
